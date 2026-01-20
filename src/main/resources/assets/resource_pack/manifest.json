@@ -1,0 +1,30 @@
+{
+  "format_version": 1,
+  "header": {
+    "description": "Slime blocks you know but colorful!",
+    "name": "Colored Slime Block",
+    "uuid": "aafe52c7-99a9-4286-b03d-69942844d295",
+    "version": [
+      1,
+      8,
+      0
+    ],
+    "min_engine_version": [
+      1,
+      8,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "description": "Slime blocks you know but colorful!",
+      "type": "resources",
+      "uuid": "31e088ad-c7e5-429e-9c9b-475ed80e883f",
+      "version": [
+        1,
+        8,
+        0
+      ]
+    }
+  ]
+}
