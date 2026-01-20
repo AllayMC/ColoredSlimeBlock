@@ -1,0 +1,17 @@
+tile.coloredslime:red_slime_block.name=红色粘液块
+tile.coloredslime:orange_slime_block.name=橙色粘液块
+tile.coloredslime:yellow_slime_block.name=黄色粘液块
+tile.coloredslime:lime_slime_block.name=黄绿色粘液块
+tile.coloredslime:green_slime_block.name=绿色粘液块
+tile.coloredslime:light_blue_slime_block.name=淡蓝色粘液块
+tile.coloredslime:blue_slime_block.name=蓝色粘液块
+tile.coloredslime:cyan_slime_block.name=青色粘液块
+tile.coloredslime:purple_slime_block.name=紫色粘液块
+tile.coloredslime:magenta_slime_block.name=品红色粘液块
+tile.coloredslime:pink_slime_block.name=粉红色粘液块
+tile.coloredslime:brown_slime_block.name=棕色粘液块
+tile.coloredslime:white_slime_block.name=白色粘液块
+tile.coloredslime:light_gray_slime_block.name=淡灰色粘液块
+tile.coloredslime:gray_slime_block.name=灰色粘液块
+tile.coloredslime:black_slime_block.name=黑色粘液块
+itemGroup.name.coloredslimeblock=彩色粘液块
