@@ -16,6 +16,7 @@ import org.allaymc.server.block.component.BlockSlimeBaseComponentImpl;
 import org.allaymc.server.block.component.BlockStateDataComponentImpl;
 import org.allaymc.server.block.impl.BlockBehaviorImpl;
 import org.allaymc.server.block.type.AllayBlockType;
+import org.allaymc.server.block.type.BlockStateDefinition;
 import org.allaymc.server.block.type.CustomBlockDefinitionGenerator;
 
 import java.util.EnumMap;
@@ -66,12 +67,17 @@ public class ColoredSlimeBlock extends Plugin {
                 ))
                 .setBaseComponentSupplier(BlockSlimeBaseComponentImpl::new)
                 .setBlockTags(Set.of(BlockTags.CAN_STICK_BLOCKS))
-                .blockDefinitionGenerator(CustomBlockDefinitionGenerator.builder()
-                        .displayName(colorType.getDisplayName())
-                        .materials(CustomBlockDefinitionGenerator.Materials.builder()
-                                .any(CustomBlockDefinitionGenerator.RenderMethod.BLEND, colorType.getTextureName())
-                        )
-                        .build())
+                .blockDefinitionGenerator(CustomBlockDefinitionGenerator.ofConstant(
+                        BlockStateDefinition.builder()
+                                .displayName(colorType.getDisplayName())
+                                .materials(BlockStateDefinition.Materials.builder()
+                                        .any(BlockStateDefinition.MaterialInstance.of(
+                                                colorType.getTextureName(),
+                                                BlockStateDefinition.RenderMethod.BLEND
+                                        ))
+                                )
+                                .build()
+                ))
                 .build();
     }
 
